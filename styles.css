@@ -108,8 +108,21 @@ button:hover {
 .metric-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 18px;
   border-bottom: 1px solid var(--border);
   padding: 10px 0;
+}
+
+.metric-row span {
+  display: block;
+}
+
+.metric-row strong {
+  display: block;
+  text-align: right;
+  min-width: 90px;
+  color: var(--navy);
 }
 
 .metric-row:last-child {
