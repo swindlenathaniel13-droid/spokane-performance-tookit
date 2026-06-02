@@ -4,12 +4,17 @@
     margin: 0.35in;
   }
 
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
   body {
     background: white;
   }
 
   button {
-    display: none;
+    display: none !important;
   }
 
   .page {
@@ -18,7 +23,8 @@
     padding: 0;
   }
 
-  .card {
+  .card,
+  .kpi-card {
     break-inside: avoid;
     page-break-inside: avoid;
   }
