@@ -27,4 +27,15 @@ const reportData = {
   }
 };
 
-console.log("Report data loaded:", reportData);
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".header");
+
+  const dataCheck = document.createElement("p");
+  dataCheck.textContent = `Data loaded for ${reportData.employee.name} — ${reportData.reportPeriod}`;
+  dataCheck.style.color = "#071f41";
+  dataCheck.style.fontWeight = "700";
+
+  header.appendChild(dataCheck);
+
+  console.log("Report data loaded:", reportData);
+});
